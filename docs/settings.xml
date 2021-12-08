@@ -253,7 +253,7 @@ under the License.
 	<profile>
       <id>github</id>
       <properties>
-        <oauth2Token>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</oauth2Token>
+        <oauth2Token>token_here</oauth2Token>
       </properties>
     </profile>
   </profiles>
