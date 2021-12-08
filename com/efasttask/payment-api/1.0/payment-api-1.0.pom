@@ -40,6 +40,16 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.7.1</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>3.0.0</version>
+            </plugin>
+            <plugin>
                 <artifactId>maven-deploy-plugin</artifactId>
                 <version>2.8.2</version>
                 <configuration>
@@ -59,7 +69,7 @@
                     <includes><include>**/*</include></includes>
                     <repositoryName>mvn-repo</repositoryName>      <!-- github repo name -->
                     <repositoryOwner>larry-do</repositoryOwner> <!-- github username  -->
-                    <oauth2Token>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</oauth2Token>
+                    <oauth2Token>${oauth2Token}</oauth2Token> <!-- github personal access token -->
                 </configuration>
                 <executions>
                     <!-- run site-maven-plugin's 'site' target as part of the build's normal 'deploy' phase -->
