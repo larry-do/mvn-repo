@@ -133,7 +133,7 @@ under the License.
 	<server>
       <id>github</id>
       <username>larry-do</username>
-      <password>hontouni12</password>
+      <password>password</password>
     </server>
   </servers>
 
